@@ -23,7 +23,7 @@ load_dotenv(os.path.join(BASE_DIR,'.env'))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = "&lfhu=h(#&6ef&km4fayxc#(d23(%eeaxi3xs9$$(-x@6)i!p9"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -85,15 +85,14 @@ WSGI_APPLICATION = 'project2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('ENGINE'),
-        'NAME': os.getenv('NAME'),
-        'USER': os.getenv('USER'),
-        'PASSWORD': os.getenv('PASSWORD'),
-        'HOST': os.getenv('HOST'),
-        'PORT': os.getenv('PORT')
+        'ENGINE': "django.db.backends.postgresql",
+        'NAME': "lyxckdku",
+        'USER': "lyxckdku",
+        'PASSWORD': "S0K-P1aTJJ-cpUsfB2BBDdneXw89kPX2",
+        'HOST': "rosie.db.elephantsql.com",
+        'PORT': "5432"
     }
-}
-
+    }
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
